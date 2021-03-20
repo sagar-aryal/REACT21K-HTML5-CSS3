@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio project" />
+    <meta name="author" content="Sagar Aryal" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScrpt" />
+    <script
+      src="https://kit.fontawesome.com/d3cd95458a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio step 6</title>
+  </head>
+  <body>
+    <!--  header section  -->
+    <header>
+      <div class="main_nav">
+        <div class="container">
+          <div class="logo"><a href="./index.html">Sagar Aryal</a></div>
+          <nav>
+            <button id="mobileButton">
+              <span class="bar"><i class="fas fa-bars"></i></span>
+            </button>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#footer">Contact </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <section id="hero-banner">
+        <div class="text1">Hello, i am</div>
+        <div class="text2">Software Developer Student</div>
+        <div class="text3">I love new challenges</div>
+        <div class="hire"><a href="#footer">Hire Me</a></div>
+        <div class="social">
+          <h3>Follow Me</h3>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main and About Section -->
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <h2 class="title">About</h2>
+          <img src="./images/hero-banner.jpg" alt="about" />
+
+          <p>
+            Hello i am Sagar, a passionate Full Stack Software Developer looking
+            for new challanges having an experience of building web applications
+            with HTML5, CSS3 and JavaScript along with some other cool web
+            development technologies.
+          </p>
+        </div>
+      </section>
+
+      <!--  Projects section -->
+
+      <section id="projects">
+        <div class="container">
+          <h2 class="title">Projects</h2>
+          <div class="grid-section">
+            <div class="grid">
+              <div class="grid-img">
+                <img
+                  src="https://source.unsplash.com/collection/1132634/1600x900"
+                  alt="random pic from unsplash"
+                />
+              </div>
+              <div class="details">
+                <h2>Project Name</h2>
+                <a href="#" class="btn">View More</a>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="grid-img">
+                <img
+                  src="https://source.unsplash.com/collection/306252/1600x900"
+                  alt="random pic from unsplash"
+                />
+              </div>
+              <div class="details">
+                <h2>Project Name</h2>
+                <a href="#" class="btn">View More</a>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="grid-img">
+                <img
+                  src="https://source.unsplash.com/collection/1240111//1600x900"
+                  alt="random pic from unsplash"
+                />
+              </div>
+              <div class="details">
+                <h2>Project Name</h2>
+                <a href="#" class="btn">View More</a>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="grid-img">
+                <img
+                  src="https://source.unsplash.com/collection/136493/1600x900"
+                  alt="random pic from unsplash"
+                />
+              </div>
+              <div class="details">
+                <h2>Project Name</h2>
+                <a href="#" class="btn">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+
+      <section id="skills">
+        <div class="container">
+          <h2 class="title">Skills</h2>
+          <div class="skill-bars">
+            <div class="bar">
+              <div class="info">
+                <span>HTML5</span>
+              </div>
+              <div class="progress-line html">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>CSS3</span>
+              </div>
+              <div class="progress-line css">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Vanilla JS</span>
+              </div>
+              <div class="progress-line js">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>MYSQL</span>
+              </div>
+              <div class="progress-line mysql">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Java</span>
+              </div>
+              <div class="progress-line java">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  Footer and Contact section  -->
+
+    <footer id="footer">
+      <div class="container">
+        <h2 class="title">Contact</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+        <p class="copyright">Copyright &copy; Sagar Aryal 2021</p>
+      </div>
+      <button id="backToTop">
+        <span class="fas fa-angle-double-up"></span>
+      </button>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

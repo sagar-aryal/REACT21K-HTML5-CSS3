@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+input,
+textarea,
+button {
+  font-family: "Lato", sans-serif;
+}
+img {
+  width: 200px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 300;
+  padding: 2rem;
+}
+h2,
+h3 {
+  padding: 2rem;
+}
+/****************** Header area ***************/
+
+header {
+  background: url(/Portfolio/Portfolio4/images/hero_banner.jpg) no-repeat fixed
+    center center/cover;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header.container {
+  padding: 3rem;
+}
+
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+#hero_banner {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+#hero_banner h2 {
+  z-index: 0.1;
+  color: lightblack;
+}
+#hero_banner h2::first-letter {
+  z-index: 0.1;
+  color: rgb(19, 130, 233);
+  font-size: 5rem;
+}
+
+/**********************  Gallery **************************/
+.gallery.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 0.5em;
+}
+
+/***********************  Main area *******************/
+
+#home,
+#about,
+#works {
+  padding: 50px;
+  min-height: 50vh;
+}
+#about {
+  background-color: #abdcfb;
+}
+
+/*************** Home ************************/
+#home img {
+  float: left;
+  margin-right: 2rem;
+}
+#home .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+#home .box1,
+#home .box2,
+#home .box3 {
+  width: 33%;
+  padding: 1rem;
+  border: 1px solid #abdcfb;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #abdcfb;
+}
+#home h3 {
+  margin-bottom: 1rem;
+}
+#home img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+#home a {
+  text-decoration: none;
+  color: lightskyblue;
+  font-weight: 800;
+}
+
+/****************** About ********************/
+#about img {
+  float: right;
+  margin-left: 2rem;
+}
+/************* Works ***********************/
+#works img {
+  float: left;
+  margin-right: 2rem;
+}
+
+/******************** footer ****************/
+
+footer {
+  background-color: #abdcfb;
+  padding: 50px;
+  min-height: 100vh;
+  text-align: center;
+  color: black;
+}
+footer .copyright {
+  margin-top: 5rem;
+  font-size: 15px;
+}
+
+/**************** Contact Form ****************/
+
+footer form {
+  margin: 0 auto;
+  width: 50%;
+  text-align: left;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+  display: flex;
+}
+
+footer form label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer form button {
+  background-color: coral;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-size: inherit;
+  margin-left: 200px;
+}
+/**************** Tablet support ****************/
+
+@media (max-width: 899px) {
+  footer form {
+    width: 80%;
+    text-align: left;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  footer form .form-group input,
+  footer form .form-group textarea {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/**************** Mobile support ****************/
+@media (max-width: 576px) {
+  .main_nav {
+    display: block;
+  }
+  header nav ul {
+    margin-top: 1rem;
+  }
+  header nav ul li {
+    padding: 1rem;
+  }
+
+  #hero-banner h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  #home .box h3 {
+    margin-bottom: 11rem;
+  }
+
+  #home,
+  #about,
+  #works {
+    padding: 1rem;
+  }
+  #home .boxes {
+    display: block;
+  }
+  #home .box1,
+  #home .box2,
+  #home .box3 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #about img,
+  #works img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  footer form .form-group {
+    display: block;
+  }
+}

@@ -1,0 +1,124 @@
+:root {
+  --element-color: radial-gradient(green, pink);
+}
+body {
+  background-image: linear-gradient(
+    120deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.card {
+  margin: 0 auto;
+  height: 300px;
+  width: 200px;
+  background: var(--element-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.card:hover {
+  box-shadow: inset 0 0 50px red;
+  /*transform: rotate(360deg);
+  */ /*transform: skewX(15deg);
+  */ /*transform: skewX(15deg);
+  */ /*transform: scaleX(10);
+  */ /*transform: scale(0.99);
+  */ /*transform: translate(20px, 20px);
+  */ /*transform: translate3d(20px, 20px, 20px);
+  */ /*transform: perspective(1200px) rotateX(45deg);*/
+  transform: rotateZ(45deg);
+}
+.circle {
+  background-image: var(--element-color);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  position: relative;
+}
+@keyframes example {
+  /*
+  from {
+    background: blue;
+  }
+  to {
+    background: violet;
+  }
+  */
+  0% {
+    background: violet;
+    top: 0;
+    left: 0;
+  }
+  15% {
+    background: blue;
+    top: 0;
+    left: 200px;
+  }
+  25% {
+    background: green;
+    top: 200px;
+    left: 200px;
+  }
+  50% {
+    background: pink;
+    top: 200px;
+    left: 0;
+  }
+  75% {
+    background: red;
+    top: 0;
+    left: 0;
+  }
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  text-align: left;
+}
+.simple h1::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  display: block;
+  background: red;
+  transition: 1s ease-in all;
+}
+.simple:hover h1::after {
+  width: 100%;
+}
+
+.advanced h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  bottom: 0;
+  border-right: 5px solid red;
+  transition: all 1s;
+}
+.advanced:hover h1::before {
+  top: 0;
+}

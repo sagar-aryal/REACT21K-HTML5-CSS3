@@ -1,0 +1,32 @@
+body {
+  background-color: green;
+  box-sizing: border-box;
+}
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  padding: 15px;
+}
+
+input {
+  width: 350px;
+  margin: 15px auto;
+  padding: 8px;
+  display: inline-block;
+  background-color: azure;
+}
+
+button {
+  background-color: orange;
+  padding: px;
+  margin-top: 20px;
+  border: none;
+  text-transform: uppercase;
+}

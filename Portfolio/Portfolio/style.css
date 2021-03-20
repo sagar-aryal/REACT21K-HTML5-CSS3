@@ -1,0 +1,624 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+input,
+textarea,
+button {
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: coral;
+  position: relative;
+}
+
+/*  Header section  */
+
+header {
+  background-color: black;
+  color: white;
+}
+
+.main_nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: black;
+}
+.main_nav .container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+#mobileButton {
+  display: none;
+}
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+@media (min-width: 899px) {
+  header nav ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid #fff;
+    transition: 0.2s;
+  }
+
+  header nav ul li a:hover:after {
+    width: 100%;
+  }
+}
+
+#hero-banner {
+  margin-top: 80px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+#hero-banner .text1 {
+  font-size: 18px;
+}
+#hero-banner .text2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: crimson;
+}
+#hero-banner .text3 {
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+#hero-banner .hire a {
+  background-color: crimson;
+  color: #fff;
+  border-radius: 0px 15px 0px 15px;
+  border-style: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+}
+.social {
+  text-align: center;
+  padding-top: 150px;
+  width: 100%;
+  text-transform: capitalize;
+}
+.social h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+.social i {
+  font-size: 18px;
+  color: crimson;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+.social i:hover {
+  opacity: 0.5;
+}
+
+/*  Main section  */
+/*  About section  */
+
+#about,
+#projects,
+#skills,
+#footer {
+  padding: 50px;
+  min-height: 500px;
+  scroll-margin-top: 5rem;
+}
+#about .title,
+#projects .title,
+#skills .title,
+#footer .title {
+  position: relative;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+#about .title::before,
+#projects .title::before,
+#skills .title::before,
+#footer .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background-color: crimson;
+  transform: translateX(-50%);
+}
+#about .title::after,
+#projects .title::after,
+#skills .title::after,
+#footer .title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  background: black;
+  transform: translateX(-50%);
+}
+
+#about .title::after {
+  content: "who i am";
+}
+#about img {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*  Projects section  */
+
+#projects .title::after {
+  content: "what i did";
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid-section {
+  display: grid;
+  width: 80%;
+  margin: 50px auto;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.grid {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.grid-img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.grid:nth-child(1) {
+  grid-row: 1/3;
+}
+.grid:nth-child(3) {
+  grid-column: 3/2;
+}
+.grid:nth-child(4) {
+  grid-column: 1/3;
+  grid-row: 2/1;
+}
+.details {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -200px;
+  padding: 0px 10px;
+  transition: 5s;
+  text-align: center;
+}
+.grid:hover .details {
+  bottom: 0px;
+  transition: 0.5s;
+}
+.grid:hover .grid-img {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+.details h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.details.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  background: coral;
+  text-decoration: none;
+  border-radius: 5px;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+/*  Skills section  */
+
+#skills .title::after {
+  content: "what i know";
+}
+
+#skills .skill-bars {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 30px;
+  width: 65%;
+  box-shadow: 0px 10px 15px white;
+  border-radius: 10px;
+}
+
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 1rem;
+  opacity: 0;
+  animation: showText 0.3s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(
+    to bottom right,
+    rgb(89, 6, 221),
+    rgb(241, 239, 236)
+  );
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 80%;
+}
+.bar .progress-line.css span {
+  width: 70%;
+}
+.bar .progress-line.js span {
+  width: 65%;
+}
+.bar .progress-line.mysql span {
+  width: 75%;
+}
+.bar .progress-line.java span {
+  width: 50%;
+}
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: white;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: crimson;
+  color: white;
+  padding: 1px 5px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "80%";
+}
+.progress-line.css span::after {
+  content: "70%";
+}
+.progress-line.js span::after {
+  content: "65%";
+}
+.progress-line.mysql span::after {
+  content: "75%";
+}
+.progress-line.java span::after {
+  content: "50%";
+}
+
+/*  Footer section  */
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+footer .copyright {
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  font-size: 12px;
+}
+/*  Contach section */
+
+#footer .title::after {
+  content: "Drop me";
+}
+
+footer form {
+  margin: 0 auto;
+  width: 50%;
+  text-align: left;
+}
+
+footer form .form-group {
+  margin: 1rem 0;
+  display: flex;
+}
+
+footer form label {
+  width: 180px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 80px;
+}
+
+footer button {
+  background-color: chocolate;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin-left: 200px;
+  font-size: 15px;
+}
+form {
+  padding-bottom: 20px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  outline: none;
+}
+
+/*  Tablet support  */
+
+@media (max-width: 899px) {
+  #mobileButton {
+    display: block;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+  }
+  #mobileButton i {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.responsive ul {
+    display: block;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 65px;
+  }
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive ul li a {
+    display: block;
+    padding: 1rem 1rem;
+  }
+  a:hover {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  #about {
+    display: block;
+  }
+  #about img {
+    width: 100%;
+  }
+  footer form {
+    width: 80%;
+    text-align: left;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*  Mobile support */
+@media (max-width: 576px) {
+  .main_nav {
+    display: block;
+  }
+  header nav ul {
+    margin-top: 1rem;
+  }
+  header nav ul li {
+    padding: 1rem;
+  }
+  #hero-banner {
+    margin-left: 1rem;
+  }
+  #hero-banner .text2 {
+    font-size: 20px;
+  }
+  #hero-banner .text3 {
+    font-size: 18px;
+  }
+  #about,
+  #projects,
+  #skills {
+    padding: 1rem;
+  }
+  #projects .grid-section {
+    display: block;
+  }
+  #projects .grid {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #about img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  footer form .form-group {
+    display: block;
+  }
+  footer form .form-group input,
+  footer form .form-group textarea,
+  footer form button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}

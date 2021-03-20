@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My awesome Portfolio">
+    <meta name="author" content="Sagar Aryal">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!-- Header and Navigartor always together.Semantic HTML5 rules-->
+    <header>
+        <div class="container">
+            <div class="main_nav">
+                <div class="logo">
+                    <h1>Sagar Aryal</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <section id="hero_banner">
+                <h2>Welcome to my Portfolio</h2>
+            </section>
+        </div>
+    </header>
+
+    <!-- Main page of the body including different sections -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Home</h2>
+                <div class="boxes">
+                    <div class="box1">
+                        <img src="https://source.unsplash.com/400x200/?nature" alt="nature">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        <a href="#">See more</a>
+                    </div>
+                    <div class="box2">
+                        <img src="https://source.unsplash.com/400x200/?fox" alt="fox">
+                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </h3>
+                        <a href="#">See more</a>
+                    </div>
+                    <div class="box3">
+                        <img src="https://source.unsplash.com/400x200/?laptop" alt="laptop">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+                
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <img src="/Portfolio/Portfolio4/images/about.jpg" alt="about"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic vero labore suscipit magnam ipsum
+                    eveniet
+                    pariatur provident fugit ipsa ex debitis mollitia dolores accusamus error, ut quibusdam, repudiandae
+                    blanditiis nam quos consequatur. 
+                </p>
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="container">
+                <h2>Works</h2>
+                <img src="/Portfolio/Portfolio4/images/work.jpg" alt="works"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sint libero, culpa soluta a repellat
+                    iste
+                    minus velit nihil aspernatur corrupti nam. Natus, et reprehenderit ratione tempora molestiae culpa
+                    maxime
+                    nam?.</p>
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id=contact>
+        <div class="container">
+            <h2>Contact me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="full_name">Full name</label>
+                    <input type="text" name="full_name" id="full_name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone_number">Phone number</label>
+                    <input type="tel" name="phone_number" id="phone_number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message"></textarea>
+                </div>
+                <button type="submit">submit</button>
+            </form>
+            <p class="copyright">Copyright &copy; SagarAryal2021</p>
+        </div>
+    
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/WLUHO9A_xik/300x200");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgb(255, 105, 180);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 30px;
+}
+
+li {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  background-color: green;
+}
+
+a {
+  color: lavender;
+  text-decoration: none;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: brown;
+  border: 10px solid gold;
+}
+
+.box2 {
+  background-color: pink;
+  border: 10px dashed purple;
+}
+.box3 {
+  background-color: greenyellow;
+  border: 10px dotted blue;
+}
+
+.box4 {
+  background-color: gold;
+  border: 10px groove red;
+}
+
+.box5 {
+  background-color: rgb(56, 56, 54);
+  border-top: 8px double red;
+  border-bottom: 8px double green;
+  border-left: 8px double blue;
+  border-right: 8px double fuchsia;
+}
