@@ -11,7 +11,7 @@ This is the repository for my courses HTML5 and CSS3 which was organised by Hels
 
 The final project was to built own portfolio using all the possible course contents.
 
-[LINK TO THE PROJECT](https://sagar-aryal.github.io/REACT21K_HTML5_CSS3/Portfolio/Portfolio/)
+[LINK TO THE PROJECT](https://sagar-aryal.github.io/REACT21K-HTML5-CSS3/Portfolio/Portfolio/)
 
 ## Technology
 
